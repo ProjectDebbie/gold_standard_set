@@ -1,26 +1,21 @@
-# debbie-pipeline 
+# gold standard set  
 
-The debbie automated pipeline retrieves biomaterials abstracts from PubMed, annotates them using multiple lexical assets (and in particular DEB (The Device, Experimental scaffolds and medical Device ontology) and MESH, and deposit the annotated abstracts in a a NoSQL database. The database search page is: debbie.bsc.es/search/. 
+The gold standard set is a list of PMIDs for abstracts selected to represent the biomaterials literature, with focus on biological evaluation of biomaterials and biocompatibility.
 
 ## Description 
 
-The pipeline orchestrates the execution of the following components (some of them are in separate repositories of DEBBIE):
-1. Periodic abstract retrieval from PubMed
-2. Standardization of the abstract text
-3. Binary classification (relevant/Non-relevant to biomaterials) using an SVM implementation
-4. Gate-based annotation of the relevant abstracts with terms from the DEB ontology, UNLS semantic types and other manually-selected classes from open ontologies (eg. NPO, NCIT, UBERON) 
-5. Conversion of the resulting gate files to .json and their deposition in the DEBBIE Mongo database
+To create the gold standard set, articles were identified using the following MeSH terms and keywords 'Biomaterials', 'Cell scaffolds', 'Biomedical and dental materials', 'Prostheses and implants', 'Materials testing','Tissue engineering', 'Tissue scaffolds', 'Equipment safety' and 'Medical device recalls' in PubMed. From these, 250 relevant articles were manually selected by scanning the records manually in approximately one-month intervals. Special effort was made to select articles with as many varying topics as possible. After a preliminary set of 251 relevant abstracts was selected manually, their
+PubMed ID’s (PMIDs) were used to train the MedlineRanker classifier in order to rank all abstracts from the past 10 years by their similarity to the relevant set. The top 1000 ranked records, which are those considered to be most related to the topic of interest were manually scanned to remove reviews and added to the Biomaterials set. The final filtration step was the exclusion of records with no abstract, non-English records and records published earlier than 2004. The final biomaterials set contained 1173
 
 ## Pipeline (Add image in here)
+
 
 ## To Run the pipeline.  Ongoing work 
 
 sh INSTALL.sh
 
 ## Built With
-
-* [Docker](https://www.docker.com/) - Docker Containers
-* [Maven](https://maven.apache.org/) - Dependency Management
+* [MedlineRanker](http://cbdm-01.zdv.uni-mainz.de/~jfontain/cms/?page_id=4)
 
 ## Versioning
 
