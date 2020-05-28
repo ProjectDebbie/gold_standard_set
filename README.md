@@ -33,8 +33,8 @@ This project is licensed under the GNU GENERAL PUBLIC LICENSE Version 3 - see th
 
 ``` BibTeX
 @article{doi:10.1002/adfm.201909910,
-	author = {Hakimi, Osnat and Gelpi, Josep Luis and Krallinger, Martin and Curi, Fabio and Repchevsky, Dmitry and 	Ginebra, Maria-Pau},
-	title = {The Devices, Experimental Scaffolds, and Biomaterials Ontology (DEB): A Tool for Mapping, Annotation, and 	   Analysis of Biomaterials Data},
+	author = {Hakimi, Osnat and Gelpi, Josep Luis and Krallinger, Martin and Curi, Fabio and Repchevsky, Dmitry and Ginebra, Maria-Pau},
+	title = {The Devices, Experimental Scaffolds, and Biomaterials Ontology (DEB): A Tool for Mapping, Annotation, and Analysis of Biomaterials Data},
 	journal = {Advanced Functional Materials},
 	volume = {30},
 	number = {16},
