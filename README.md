@@ -9,7 +9,7 @@ PubMed ID’s (PMIDs) were used to train the MedlineRanker classifier in order t
 
 ## Built With
 * [MedlineRanker](http://cbdm-01.zdv.uni-mainz.de/~jfontain/cms/?page_id=4)
-* [PubMed eBOT](https://www.ncbi.nlm.nih.gov/Class/PowerTools/eutils/ebot/ebot.cgi) 
+* [PubMed Ebot](https://www.ncbi.nlm.nih.gov/Class/PowerTools/eutils/ebot/ebot.cgi) 
 
 ## Versioning
 
