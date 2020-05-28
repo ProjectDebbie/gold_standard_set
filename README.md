@@ -1,4 +1,4 @@
-# gold standard set  
+# Gold standard set  
 
 The gold standard set is a list of PMIDs for abstracts selected to represent the biomaterials literature, with focus on biological evaluation of biomaterials and biocompatibility.
 
@@ -8,6 +8,7 @@ To create the gold standard set, articles were identified using the following Me
 PubMed ID’s (PMIDs) were used to train the MedlineRanker classifier in order to rank all abstracts from the past 10 years by their similarity to the relevant set. The top 1000 ranked records, which are those considered to be most related to the topic of interest were manually scanned to remove reviews and added to the Biomaterials set. The final filtration step was the exclusion of records with no abstract, non-English records and records published earlier than 2004. The final biomaterials set contained 1173
 
 ## Built With
+
 * [MedlineRanker](http://cbdm-01.zdv.uni-mainz.de/~jfontain/cms/?page_id=4)
 * [PubMed Ebot](https://www.ncbi.nlm.nih.gov/Class/PowerTools/eutils/ebot/ebot.cgi) 
 
