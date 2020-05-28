@@ -13,6 +13,11 @@ PubMed ID’s (PMIDs) were used to train the MedlineRanker classifier in order t
 
 ## Versioning
 
+Versions are named after their content emphasis as well as the number of PMIDs.
+
+clinical_only_106 denotes 106 PMIDs with clinical studies of biomaterials and implants 
+gs_mixed_1230 denotes 1230 PMIDs with all study types (in vitro, in vivo, clinical etc) 
+gs_extra_clinical_1329 denotes 1329 PMIDs with all study types, with added clinical studies
 
 
 ## Authors
